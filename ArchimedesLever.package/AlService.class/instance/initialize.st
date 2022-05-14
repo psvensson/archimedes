@@ -1,5 +1,8 @@
 initialization
 initialize 
-	(ZnServer startDefaultOn: 1701)
-   onRequestRespond: [ :request | 
-      ZnResponse ok: (ZnEntity text: 'Hello World!') ].
+	ZnServer startDefaultOn: 1701.
+	ZnServer default delegate: (ZnWebSocketDelegate handler:
+  [ :webSocket |
+    [ | message |
+      message := webSocket readMessage.
+      webSocket sendMessage: message ] repeat ]).

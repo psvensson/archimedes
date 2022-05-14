@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "PeterSvensson 5/14/2022 11:10",
+	"super" : "PackageManifest",
+	"category" : "ArchimedesLever-Manifest",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ManifestArchimedesLever",
+	"type" : "normal"
+}
